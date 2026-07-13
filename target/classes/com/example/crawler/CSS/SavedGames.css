@@ -1,0 +1,23 @@
+.list-view{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+
+.list-cell {
+    -fx-font-size: 25px;
+    -fx-font-family: "Consolas";
+    -fx-text-fill: #ffffff;
+    -fx-background-color: transparent;
+
+}
+.list-cell:filled:selected {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+
+}
+.list-view .scroll-bar {
+    -fx-pref-width: 0;
+    -fx-opacity: 0;
+}
+

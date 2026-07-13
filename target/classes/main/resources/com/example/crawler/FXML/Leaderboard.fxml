@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" stylesheets="@../CSS/Leaderboard.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.crawler.GameController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1300.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../Images/UI/background.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="HIGH SCORES" textFill="WHITE">
+               <font>
+                  <Font name="Dutch 801 Bold BT" size="88.0" />
+               </font>
+            </Label>
+            <StackPane>
+               <children>
+                  <Pane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="400.0" style="-fx-background-color: black; -fx-opacity: 0.7;" />
+                  <VBox alignment="CENTER">
+                     <children>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="400.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT">
+                                 <children>
+                                    <Label text="RANK" textAlignment="CENTER" textFill="#b4b4b4">
+                                       <font>
+                                          <Font name="Consolas Bold" size="25.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="25.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label text="NAME" textAlignment="CENTER" textFill="#b4b4b4">
+                                       <font>
+                                          <Font name="Consolas Bold" size="25.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label text="SCORE" textAlignment="CENTER" textFill="#b4b4b4">
+                                       <font>
+                                          <Font name="Consolas Bold" size="25.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="90.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <ListView fx:id="LeaderboardList" maxHeight="1.7976931348623157E308" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+      <Button mnemonicParsing="false" onAction="#onMainMenuClick" styleClass="sketchy" stylesheets="@../CSS/sketchy.css" text="Back" textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+   </children>
+</AnchorPane>

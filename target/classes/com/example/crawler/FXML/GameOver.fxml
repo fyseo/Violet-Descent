@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1300.0" stylesheets="@../CSS/sketchy.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.crawler.GameController">
+   <children>
+      <Pane layoutX="73.0" maxWidth="-Infinity" style="-fx-background-color: #000000; -fx-opacity: 0.6;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <VBox alignment="CENTER" layoutY="407.6000061035156" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" text="GAME OVER" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="60.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" prefHeight="40.0" prefWidth="317.0">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="86.0" text="Score:" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ScoreLabel" textFill="WHITE">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER">
+               <children>
+                  <TextField fx:id="NameTextField" maxHeight="-Infinity" minHeight="-Infinity" promptText="Enter Name:" style="-fx-background-color: black; -fx-opacity: 0.5; -fx-text-fill: white; -fx-background-radius: 0;">
+                     <font>
+                        <Font size="19.0" />
+                     </font></TextField>
+                  <Button maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#onSubmitButtonClick" prefHeight="40.0" style="-fx-background-radius: 0;" styleClass="submit" stylesheets="@../CSS/submit.css" text="Submit" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Button alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPlayAgainClick" styleClass="sketchy" text="Play Again" textAlignment="CENTER" />
+                  <Button mnemonicParsing="false" onAction="#onMainMenuClick" styleClass="sketchy" text="Main Menu" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

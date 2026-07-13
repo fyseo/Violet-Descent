@@ -1,0 +1,17 @@
+.submit {
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+    -fx-background-radius: 0;
+}
+
+.submit:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.7);
+    -fx-background-radius: 0;
+
+}
+
+.submit:pressed {
+    -fx-scale-x: 0.9;
+    -fx-scale-y: 0.9;
+    -fx-background-radius: 0;
+
+}

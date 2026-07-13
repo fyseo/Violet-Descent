@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="538.0" prefWidth="1000.0" stylesheets="@../CSS/sketchy.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.crawler.GameController">
+   <children>
+      <AnchorPane>
+         <children>
+            <ImageView fitHeight="700.0" fitWidth="1300.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../Images/UI/background.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <VBox alignment="TOP_CENTER" prefHeight="700.0" prefWidth="1300.0">
+          <padding>
+              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+          </padding>
+         <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="200.0" style="-fx-background-color: TRANSPARENT;" VBox.vgrow="ALWAYS">
+            <top>
+      
+                <Label fx:id="welcomeText" style="-fx-background-color: TRANSPARENT;" text="Violet  Descent" textAlignment="CENTER" BorderPane.alignment="BOTTOM_CENTER">
+                  <textFill>
+                     <RadialGradient centerX="0.48017620305132763" centerY="1.0" radius="1.0">
+                        <stops>
+                           <Stop>
+                              <color>
+                                 <Color red="0.05263157933950424" blue="0.06315789371728897" />
+                              </color>
+                           </Stop>
+                           <Stop offset="1.0">
+                              <color>
+                                 <Color red="0.6133333444595337" green="0.17777778208255768" blue="0.800000011920929" />
+                              </color>
+                           </Stop>
+                        </stops>
+                     </RadialGradient>
+                  </textFill>
+                  <font>
+                     <Font name="Arial Rounded MT Bold" size="96.0" />
+                  </font>
+                  <padding>
+                     <Insets top="20.0" />
+                  </padding>
+               </Label>
+            </top>
+            <center>
+               <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="329.0" minWidth="200.0" prefHeight="329.0" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
+                  <children>
+                      <Button fx:id="StartButton" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#onStartGameClick" prefHeight="60.0" styleClass="sketchy" text="_START GAME" textFill="WHITE" />
+                     <Button fx:id="LoadButton" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" onAction="#setOnContinueButtonClick" prefHeight="60.0" styleClass="sketchy" text="_CONTINUE" textFill="WHITE" />
+                     <Button fx:id="LeaderboardButton" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" onAction="#setOnLeaderboardButtonClick" prefHeight="60.0" styleClass="sketchy" text="_LEADERBOARD" textFill="WHITE" />
+                     <Button fx:id="SettingsButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSettingsButtonClick" prefHeight="60.0" styleClass="sketchy" text="SETTINGS" />
+                     <Button fx:id="ExitButton" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" onAction="#onExitClick" prefHeight="60.0" styleClass="sketchy" text="_EXIT" textFill="WHITE" />
+                  </children>
+               </VBox>
+            </center>
+         </BorderPane>
+      </VBox>
+   </children>
+</Pane>

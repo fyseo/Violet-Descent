@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" stylesheets="@../CSS/SavedGames.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.crawler.GameController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1300.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../Images/UI/background.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="SAVED GAMES" textFill="WHITE">
+               <font>
+                  <Font name="Dutch 801 Bold BT" size="88.0" />
+               </font>
+            </Label>
+            <StackPane>
+               <children>
+                  <Pane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="320.0" style="-fx-background-color: black; -fx-opacity: 0.7;" />
+                  <VBox alignment="CENTER">
+                     <children>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="320.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT">
+                                 <children>
+                                    <AnchorPane maxWidth="-Infinity" prefWidth="320.0">
+                                       <children>
+                                          <Label text="ID" textAlignment="CENTER" textFill="#b4b4b4" AnchorPane.leftAnchor="30.0">
+                                             <font>
+                                                <Font name="Consolas Bold" size="25.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="55.19999694824219" layoutY="0.800000011920929" text="HP" textFill="#b4b4b4" AnchorPane.leftAnchor="80.0">
+                                             <font>
+                                                <Font name="Consolas Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="184.0" text="LVL" textAlignment="CENTER" textFill="#b4b4b4" AnchorPane.leftAnchor="125.0">
+                                             <font>
+                                                <Font name="Consolas Bold" size="25.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="225.60000610351562" text="TIME" textAlignment="CENTER" textFill="#b4b4b4" AnchorPane.leftAnchor="150.0">
+                                             <font>
+                                                <Font name="Consolas Bold" size="25.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="25.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <ListView fx:id="SavedGamesList" maxHeight="1.7976931348623157E308" onMouseClicked="#onSavedGamesMouseClick" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+            <HBox alignment="CENTER" spacing="10.0" stylesheets="@../CSS/sketchy.css">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="LoadGameButton" disable="true" mnemonicParsing="false" onAction="#onLoadGameButtonClick" prefHeight="60.0" prefWidth="210.0" styleClass="sketchy" text="LOAD GAME" />
+                  <Button fx:id="DeleteButton" disable="true" mnemonicParsing="false" onAction="#onDeleteButtonClick" prefWidth="210.0" styleClass="sketchy" text="DELETE" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button mnemonicParsing="false" onAction="#onMainMenuClick" styleClass="sketchy" stylesheets="@../CSS/sketchy.css" text="Back" textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+   </children>
+</AnchorPane>

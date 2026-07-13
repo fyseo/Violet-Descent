@@ -1,0 +1,26 @@
+.sketchy {
+    -fx-font-family: "Courier New";
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+    -fx-text-fill: #333333;
+    -fx-alignment: center;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px;
+    -fx-border-width: 0;
+    -fx-padding: 16px;
+    -fx-effect: dropshadow(three-pass-box, rgba(51, 51, 51, 0.4), 0, 0, 4, 4);
+}
+
+.sketchy:hover {
+    -fx-rotate: -2.5;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.sketchy:pressed {
+    -fx-rotate: -2.5;
+    -fx-effect: innershadow(three-pass-box, rgba(51, 51, 51, 0.95), 0, 0, 4, 4);
+    -fx-translate-y: 2;
+}
+
