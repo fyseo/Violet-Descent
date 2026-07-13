@@ -23,7 +23,7 @@ A 2D top-down dungeon crawler game built entirely in Java using the JavaFX frame
 1. Clone this repository.
 2. Set up a local MySQL database named `violet_descent_game` and configure the credentials in `DBConnection.java`.
 3. Ensure the JavaFX SDK is configured in your IDE (IntelliJ/Eclipse).
-4. Run `Main.java` to start the application.
+4. Run `Main.java` to start the application. 
 
 ## Contributors
 
